@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Purple: #776df1;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    text-align: center;
+    background-color: #fff;
+    width: 350px;
+    height: 100%;
+    box-shadow: 16px 19px 17px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+.card-container img{
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    width: 350px;
+}
+.card-container h2{
+    color: var(--Dark-blue);
+    font-weight: 900;
+    margin-top: 10%;
+    margin-bottom: 2% auto;
+}
+.card-container p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+    margin: 1rem 0;
+}
+.box{
+    text-align: center;
+    display: flex;
+    margin: 5% auto;
+    border-radius: .5em;
+    width: 300px;
+    height: 80px;
+    background: var(--Very-pale-blue);
+    transition: a .3s;
+}
+.box img{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-top: 8%;
+    left: 5%;
+}
+.box h4{
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    left: 10%;
+    margin-top: 20px;
+}
+.box p{
+    margin-top: 14%;
+    position: relative;
+    left: -20%;
+}
+.box a{
+    font-size: 14px;
+    color: var(--Bright-blue);
+    font-weight: 900;
+    position: relative;
+    top: 40%;
+    left: 2%;
+    float: right;
+}
+.box a:hover{
+    color: #776df1;
+}
+.card-container .btns{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 300px;
+    margin: 0 auto;
+}
+.card-container .btns button{
+    padding: 13px 12px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: transparent;
+    font-weight: 900;
+    color: var(--Desaturated-blue);
+    cursor: pointer;    
+    transition: color .4s, background-color .4s;
+}
+.card-container .btns button:hover{
+    color: var(--Dark-blue);
+}
+.card-container .btns button:nth-child(1){
+    background-color: var(--Bright-blue);
+    color: #fff;
+    box-shadow: 0px 19px 20px  rgba(0, 0, 0, 0.2);
+}
+.card-container .btns button:nth-child(1):hover{
+    background-color: var(--Purple);
+}

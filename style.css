@@ -17,6 +17,8 @@ body{
     min-height: 100vh;
     background-image: url(./pattern-background-desktop.svg);
     background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
     display: flex;
     justify-content: center;
     align-items: center;
